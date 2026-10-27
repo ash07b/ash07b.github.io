@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aishwarya B | ML Systems Engineer</title>
+<meta name="description" content="Aishwarya B, MS Computer Science at USC. ML systems, distributed systems and causal time-series research.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to experience</a>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#"><i aria-hidden="true"></i>Aishwarya B</a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#research" class="hide-sm">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#stack" class="hide-sm">Stack</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" id="themeBtn" type="button">☾</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Aishwarya&nbsp;B</h1>
+        <ul class="spec">
+          <li>MS CS, USC, 2027</li>
+          <li>ML systems</li>
+          <li>Distributed systems</li>
+        </ul>
+        <p class="lede">I build machine learning systems and the infrastructure that keeps them fast and reliable in production.</p>
+        <p class="where">Research assistant in USC's CPS-VIDA Lab working on neural causal discovery, and software engineering intern at Quickslot Health building clinical ML pipelines on AWS.</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:baishwar@usc.edu">Email me</a>
+          <a class="btn" href="https://github.com/ash07b" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/aishwarya-b-b7a670293/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <figure class="package">
+        <div class="die">
+          <img src="assets/photo.jpg" alt="Aishwarya standing outside a café patio in Los Angeles" width="480" height="640">
+          <figcaption><span>Ash</span><span>Los Angeles</span></figcaption>
+        </div>
+      </figure>
+    </div>
+
+    <div class="gpu">
+      <div class="wrap">
+        <div class="readout">
+          <p>A toy GPU scheduler: thread blocks from a queue of kernels filling the slots of each streaming multiprocessor.</p>
+          <dl>
+            <dt>Kernel</dt><dd id="kn">matmul_tiled</dd>
+            <dt>Occupancy</dt><dd id="occ">0%</dd>
+            <dt>Blocks in flight</dt><dd id="fly">0</dd>
+            <dt>Completed</dt><dd id="dn">0</dd>
+          </dl>
+        </div>
+        <canvas id="sm" role="img" aria-label="A grid of streaming multiprocessors whose slots light up as thread blocks from different kernels are scheduled and finish."></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="work">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <p class="intro">Clinical ML pipelines, causal discovery research and real-time monitoring, most recent first.</p>
+      <ol class="rail">
+        <li class="now">
+          <div class="role-head"><h3>Software Engineering Intern</h3><span class="when">Jun 2026 to present</span></div>
+          <p class="org">Quickslot Health, New York (remote)</p>
+          <ul>
+            <li>Wrote the specification for a Facial Expressiveness signal, turning peer-reviewed facial-expression research and the Actor-Partner Interdependence Model into five measurable concepts with thresholds and scoring logic, and a normalized per-dyad score z<sub>F</sub>(t) for downstream signal fusion.</li>
+            <li>Refactored AWS Comprehend Medical processing in a React and TypeScript clinical dashboard, batching requests under the 20,000-character limit and running them in parallel while preserving entity offsets. API costs fell 14 to 26% across tested sessions.</li>
+            <li>Resolved a critical third-party dependency vulnerability and kept the production build secure and stable.</li>
+          </ul>
+          <ul class="tags"><li>Python</li><li>Signal processing</li><li>React</li><li>TypeScript</li><li>Swift</li><li>AWS Comprehend Medical</li></ul>
+        </li>
+        <li class="now">
+          <div class="role-head"><h3>Research Assistant</h3><span class="when">Mar 2026 to present</span></div>
+          <p class="org">CPS-VIDA Lab, University of Southern California</p>
+          <ul>
+            <li>Benchmarked three neural Granger causality architectures (cLSTM, cMLP, TCDF) on chaotic Lorenz-96 dynamics, V-HAB spacecraft telemetry and fMRI NetSim data to judge how reliable they are for causal monitoring.</li>
+            <li>Traced a TCDF model collapse to under-parameterized depth and a misread significance threshold, fixed it with a tuned configuration, and replaced raw accuracy with AUROC, precision, recall and F1 for fair comparison.</li>
+            <li>Found a physical modeling limit in the spacecraft telemetry (AUROC 0.342, below chance) caused by instantaneous temperature–pressure coupling.</li>
+          </ul>
+          <ul class="tags"><li>Python</li><li>PyTorch</li><li>NumPy</li><li>Pandas</li><li>MATLAB/Simulink</li></ul>
+        </li>
+        <li>
+          <div class="role-head"><h3>Research Assistant</h3><span class="when">Oct 2024 to Jun 2025</span></div>
+          <p class="org">M S Ramaiah University of Applied Sciences, Bengaluru</p>
+          <ul>
+            <li>Led a team of seven building an end-to-end deep learning system for oral cancer (OSCC) risk stratification from gigapixel H&amp;E whole-slide images.</li>
+            <li>Deployed a Flask inference service that processes 0.5 to 2 GB pathology slides in 10 to 15 seconds, with visual explanations for clinicians.</li>
+          </ul>
+          <ul class="tags"><li>Python</li><li>PyTorch</li><li>OpenCV</li><li>Optuna</li><li>MLflow</li></ul>
+        </li>
+        <li>
+          <div class="role-head"><h3>Software Engineering Intern</h3><span class="when">Oct 2024 to Feb 2025</span></div>
+          <p class="org">Mphasis, Bengaluru</p>
+          <ul>
+            <li>Built a real-time monitoring system for multi-chamber pharmaceutical equipment in Angular and RxJS, handling concurrent 1 Hz sensor streams across five or more chambers with UI updates under 100 ms.</li>
+            <li>Designed a modular reactive frontend with slope-based control logic and structured time-series logging, improving observability for a cross-functional team of 15.</li>
+          </ul>
+          <ul class="tags"><li>Angular</li><li>RxJS</li><li>TypeScript</li></ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="research">
+    <div class="wrap">
+      <h2>Publication</h2>
+      <p class="intro">Peer-reviewed work from my undergraduate research.</p>
+      <article class="paper">
+        <div class="score">0.995<small>AUC-ROC</small></div>
+        <div>
+          <h3>BO-MobileXNet for Automated OSCC Risk Stratification</h3>
+          <p>A Bayesian-optimized deep learning model that grades oral squamous cell carcinoma risk from whole-slide pathology images, reaching 89% accuracy and outperforming state-of-the-art CNN baselines.</p>
+          <p class="venue">Digital Dentistry Journal, 2025. <a href="https://www.sciencedirect.com/science/article/pii/S2950643325000261" target="_blank" rel="noopener">Read the paper</a></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <p class="intro">Systems I built from the ground up to understand how they fail.</p>
+      <div class="projects">
+        <article class="sheet">
+          <header><h3>Raft key-value store</h3><span>Consensus</span></header>
+          <p>Raft written from scratch: leader election, log replication and crash recovery across a multi-node cluster, with a client and a live dashboard of cluster state.</p>
+          <dl>
+            <dt>Stack</dt><dd>Python, Docker Compose, Kubernetes</dd>
+            <dt>Verified</dt><dd>17 tests covering failover and network partitions</dd>
+            <dt>Source</dt><dd><a href="https://github.com/ash07b" target="_blank" rel="noopener">github.com/ash07b</a></dd>
+          </dl>
+        </article>
+        <article class="sheet">
+          <header><h3>AuditCentral</h3><span>AI governance</span></header>
+          <p>A Model Context Protocol server that validates and normalizes AI-generated context with schema enforcement and retrieval-based enrichment, so teams in regulated fields can use AI safely.</p>
+          <dl>
+            <dt>Stack</dt><dd>Python, FastAPI, AWS EC2 and S3, Docker, RAG</dd>
+            <dt>Result</dt><dd>Manual review effort down 38%</dd>
+            <dt>Source</dt><dd><a href="https://github.com/ash07b" target="_blank" rel="noopener">github.com/ash07b</a></dd>
+          </dl>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="stack">
+    <div class="wrap">
+      <h2>Stack</h2>
+      <p class="intro">What I work with, layered from the application down to the hardware.</p>
+      <div class="stack">
+        <div class="layer" style="--d:0"><h3>Applications and cloud</h3><p>React, Vite, Angular, Node.js, Flask, FastAPI, RxJS, AWS (EC2, S3, Amplify, Cognito, DynamoDB, HealthScribe, Comprehend Medical, Polly, KMS), Docker, Kubernetes</p></div>
+        <div class="layer" style="--d:1"><h3>ML and research</h3><p>PyTorch, TensorFlow, scikit-learn, OpenCV, MLflow, Optuna, MATLAB, neural Granger causality (cLSTM, cMLP, TCDF)</p></div>
+        <div class="layer" style="--d:2"><h3>Distributed systems</h3><p>Raft consensus, leader election, log replication, fault tolerance</p></div>
+        <div class="layer" style="--d:3"><h3>Data</h3><p>MySQL, PostgreSQL, Pandas, NumPy, Power BI</p></div>
+        <div class="layer" style="--d:4"><h3>Languages and compute</h3><p>CUDA, C, C++, Python, Java, SQL, JavaScript, TypeScript, Swift, Git, Linux</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="education">
+    <div class="wrap">
+      <h2>Education</h2>
+      <p class="intro">Computer science, from Bengaluru to Los Angeles.</p>
+      <div class="edu">
+        <div><h3>University of Southern California</h3><p>MS, Computer Science. Aug 2025 to May 2027</p></div>
+        <div><h3>M S Ramaiah University of Applied Sciences</h3><p>BS, Computer Science and Engineering. Dec 2021 to Jun 2025</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Looking for ML systems and software engineering roles.</h2>
+      <a class="mail" href="mailto:baishwar@usc.edu">baishwar@usc.edu</a>
+      <div class="links">
+        <a class="btn" href="https://github.com/ash07b" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/aishwarya-b-b7a670293/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© <span id="yr">2026</span> Aishwarya B</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
